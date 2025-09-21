@@ -1,0 +1,48 @@
+
+.myPantry{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+    border-bottom: 5px solid rgb(26, 83, 9);
+    box-shadow: none;
+    background-color: #06240f;
+    color: #ffff;
+}
+
+.data-table{
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.addProduct {
+    font-size: 50px;
+    border-bottom-style: solid;
+    background-color: #06240f;
+    border-radius: 15px;
+    color: #fff;
+    display: block;
+    width: auto;
+    height: 70px;
+}
+
+.addProduct:hover {
+    color: #c8c3b8;
+    transform: translateY(-1px);
+}
+
+.offer {
+    background-color: #9c9784;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+}

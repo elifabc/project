@@ -1,0 +1,19 @@
+.welcome {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 5000;
+    font-style: normal;
+    font-size: 70px;
+    color: #06240f;
+    text-align: center;
+}
+.saveButton{
+    width: 100%;
+    padding: 12px 14px;
+    background: var(--primary);
+    color: #06240f;                  /* yeşil üstünde iyi kontrast */
+    font-weight: 700;
+    border: 1px solid color-mix(in oklab, var(--primary) 25%, transparent);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: filter .15s ease, background-color .2s ease, transform .12s ease;
+}

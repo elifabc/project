@@ -1,0 +1,60 @@
+body{
+    background:
+            linear-gradient(rgba(250, 233, 218, 0.55), rgba(237, 229, 214, 0.55)),
+            url('../images/background-wrapper.webp') center / cover no-repeat fixed;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.logo-name {
+    color: #093217;
+    font-size: 60px;
+    align-items: center;
+    border: 5px solid rgb(1, 9, 26);
+    padding: 10px 15px;
+    margin: 0 auto;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+.slogan {
+    color: #3C3933;
+    font-size: 37px;
+    font-family: "Tagesschrift", system-ui;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.login {
+    color: #06240f;
+    font-size: 45px;
+    text-align: center;
+    margin: 8px 0 4px;
+}
+
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.line-text::before, .line-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #f8f9fa;
+    transform: translateY(-50%);
+}
+
+.line-text::before {
+    left: 0;
+}
+.line-text::after {
+    right: 0;
+}
