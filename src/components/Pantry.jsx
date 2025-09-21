@@ -20,6 +20,7 @@ export default function Pantry() {
                 <h1>Dolabım</h1>
             </div>
             <br/>
+            
             <div className='flexRow'>
                 <div className='data-table'>
                     <DataTable/>
