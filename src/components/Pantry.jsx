@@ -5,10 +5,22 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import '../css/Pantry.css'
 import MediaCard from "./MediaCard.jsx";
 import {useNavigate} from "react-router-dom";
+import {Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@mui/material";
+import {useState} from "react";
+
 
 export default function Pantry() {
 
+    const [open, setOpen] = useState(false);
+    const functionopenpopup = () => {
+        setOpen(true);
+    }
+    const closepoppup = () => {
+        setOpen(false);
+    }
+
     const navigate = useNavigate();
+
 
     return (
         <div>
@@ -27,7 +39,18 @@ export default function Pantry() {
                     <DataTable/>
                 </div>
                 <div>
-                    <button className='addProduct'>+ Yeni Malzeme Ekle</button>
+                    <button className='addProduct' onClick={functionopenpopup}>+ Yeni Malzeme Ekle</button>
+                    <Dialog open={open} onClose={closepoppup} fullWidth maxWidth="md">
+                        <DialogTitle>Başlık</DialogTitle>
+                        <DialogContent>
+                            <DialogContentText>
+                                İçerik buraya…
+                            </DialogContentText>
+                        </DialogContent>
+                        <DialogActions>
+                            <Button onClick={closepoppup}>Kapat</Button>
+                        </DialogActions>
+                    </Dialog>
                     <br/><br/>
                     <h2 className='offer'>Senin İçin Önerilen Tarif:</h2>
                     <MediaCard/>

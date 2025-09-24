@@ -7,7 +7,10 @@ import RouterConfig from "./config/RouterConfig.jsx";
 function App() {
 
   return (
-      <RouterConfig />
+      <RouterConfig>
+
+      </RouterConfig>
+
   )
 }
 

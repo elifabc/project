@@ -1,11 +1,7 @@
 import React, {useEffect, useState} from "react";
-import Header from "./Header.jsx";
 import '../css/Home.css'
-import DataTable from "./DataTable.jsx";
-import MediaCard from "./MediaCard.jsx";
 import ButtonBaseDemo from "./ButtonBaseDemo.jsx";
 import logo from "../images/logo.png";
-import CircleNotificationsIcon from "@mui/icons-material/CircleNotifications";
 import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
 import {useNavigate} from "react-router-dom";
@@ -21,19 +17,19 @@ function Home() {
 
 
     return(
+
         <div>
             <div className='header'>
                 <div className='flex-row'>
                     <img className='logo' src={logo}/>
                     <p className='logo-text'> Yeşil Dolap A.Ş.</p>
-                    <CircleNotificationsIcon className='icon'/>
                     <Stack className='avatar'>
-                        <Avatar sx={{height: '40px', width: '40px'}}>{name}</Avatar>
+                        <Avatar >{name}</Avatar>
                     </Stack>
                 </div>
             </div>
 
-            <h1 className='welcome'>YEŞİLDOLAP' A HOŞGELDİN {name}! </h1>
+            <h1 className='welcomeHome'>YEŞİLDOLAP' A HOŞGELDİN {name}! </h1>
             <div>
                 <h3 style={{color: '#093217',
                     fontSize:' 50px',

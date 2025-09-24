@@ -1,10 +1,11 @@
-.welcome {
+.welcomeSignUp {
     font-family: "Tagesschrift", system-ui;
-    font-weight: 5000;
+    font-weight: 5500;
     font-style: normal;
-    font-size: 70px;
+    font-size: 50px;
     color: #06240f;
     text-align: center;
+    margin-top: 0px;
 }
 .saveButton{
     width: 100%;

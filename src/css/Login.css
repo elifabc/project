@@ -9,22 +9,21 @@ body{
 .logo-name {
     color: #093217;
     font-size: 60px;
-    align-items: center;
+    text-align: center;
     border: 5px solid rgb(1, 9, 26);
     padding: 10px 15px;
     margin: 0 auto;
     border-radius: 25px;
-    display: inline-block;
-    text-align: center;
 }
 
 .slogan {
-    color: #3C3933;
-    font-size: 37px;
     font-family: "Tagesschrift", system-ui;
-    margin: 0 auto;
-    display: inline-block;
+    font-weight: 5500;
+    font-style: normal;
+    font-size: 37px;
+    color: #3C3933;
     text-align: center;
+    margin: 0 auto;
 }
 
 .login {
@@ -35,6 +34,7 @@ body{
 }
 
 .line-text {
+    color: #01091a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@ body{
     top: 50%;
     width: 40%;
     height: 1px;
-    background-color: #f8f9fa;
+    background-color: #01091a;
     transform: translateY(-50%);
 }
 

@@ -26,6 +26,7 @@ function Login() {
                             display: 'grid',
                             gridTemplateColumns: '1fr',
                             rowGap: 2,
+                            textAlign: 'center'
                         }}
                         noValidate
                         autoComplete="off"
@@ -44,7 +45,7 @@ function Login() {
                                 }}>
                             Giriş
                         </Button>
-                        <p style={{textAlign: 'right'}}>Şifreni mi unuttun?</p>
+                        <p style={{textAlign: 'right', color:'#01091a'}}>Şifreni mi unuttun?</p>
                         <div className="line-text">
                             <span>Veya</span>
                         </div>

@@ -1,0 +1,58 @@
+.welcomeHome {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 5500;
+    font-style: normal;
+    font-size: 50px;
+    color: #06240f;
+    text-align: center;
+}
+.header{
+    position: sticky;
+    top: 10px;
+    inset-inline: 0;
+    z-index: 1000;
+    background: var(--header-bg);
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    box-shadow: none;
+    transition: background .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.header.is-scrolled{
+    background: var(--header-bg-solid);
+    box-shadow: var(--shadow);
+}
+.flex-row{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 8px 16px;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 12px;
+}
+
+.logo-text{
+    margin: 0;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: .2px;
+    color: var(--text);
+    user-select: none;
+}
+
+.avatar{
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform .15s ease, color .2s ease, opacity .2s ease;
+}

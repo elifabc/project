@@ -12,8 +12,8 @@ import storageImg  from '../images/ storage.webp';
 
 
 const images = [
-    { url: pantryImg,  title: 'Dolabım',          width: '40%' ,    to:"/Pantry"},
-    { url: recipesImg, title: 'Tarifler',         width: '30%' },
+    { url: pantryImg,  title: 'Dolabım',          width: '40%' ,    to:"/pantry"},
+    { url: recipesImg, title: 'Tarifler',         width: '30%' ,    },
     { url: storageImg, title: 'Saklama Koşulları', width: '30%' },
 ];
 
