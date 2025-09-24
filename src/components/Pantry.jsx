@@ -8,7 +8,6 @@ import {useNavigate} from "react-router-dom";
 import {Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@mui/material";
 import {useState} from "react";
 
-
 export default function Pantry() {
 
     const [open, setOpen] = useState(false);
