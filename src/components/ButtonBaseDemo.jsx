@@ -13,13 +13,13 @@ import storageImg  from '../images/ storage.webp';
 
 const images = [
     { url: pantryImg,  title: 'Dolabım',          width: '40%' ,    to:"/pantry"},
-    { url: recipesImg, title: 'Tarifler',         width: '30%' ,    },
-    { url: storageImg, title: 'Saklama Koşulları', width: '30%' },
+    { url: recipesImg, title: 'Tarifler',         width: '30%' ,    to: "/recipes"},
+    { url: storageImg, title: 'Saklama Koşulları', width: '30%',    to: "/storage" },
 ];
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: 'relative',
-    height: 200,
+    height: 250,
     [theme.breakpoints.down('sm')]: {
         width: '100% !important',
         height: 100,

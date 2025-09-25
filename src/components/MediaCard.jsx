@@ -17,7 +17,7 @@ export default function MediaCard() {
 
     return (
 
-        <Card sx={{ maxWidth: 480 }}>
+        <Card sx={{ maxWidth: 450, marginLeft:'18px', gap: '10px' }}>
             <CardMedia
                 sx={{ height: 190 }}
                 image={Makarna}

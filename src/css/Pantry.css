@@ -23,17 +23,6 @@
     gap: 60px;
 }
 
-.addProduct {
-    font-size: 50px;
-    border-bottom-style: solid;
-    background-color: #1A5309FF;
-    border-radius: 15px;
-    color: #fff;
-    display: block;
-    width: auto;
-    height: 70px;
-}
-
 .addProduct:hover {
     color: #a6b1ab;
     transform: translateY(-1px);

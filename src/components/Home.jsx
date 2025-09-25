@@ -6,6 +6,8 @@ import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
 import {useNavigate} from "react-router-dom";
 import Video from '../images/video.png'
+import Header from "./Header.jsx";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 function Home() {
 
@@ -26,6 +28,8 @@ function Home() {
                     <Stack className='avatar'>
                         <Avatar >{name}</Avatar>
                     </Stack>
+                    <LogoutIcon onClick={() => navigate("/login")}
+                                      style={{marginLeft:'20px'}} />
                 </div>
             </div>
 
@@ -39,7 +43,7 @@ function Home() {
                 }}>Yeşildolap Nasıl Çalışır?</h3>
                 <img style={{ height: '250px',
                     display: 'block',
-                    margin: '0 auto'
+                    margin: '0 auto',
                 }} src={Video}/>
                 <div style={{
                     position: 'absolute',

@@ -15,13 +15,16 @@ import logo from '../images/logo.png';
 import { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-const settings = ['Profil', 'Çıkış'];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-    // her sayfa için label + path
+    const settings = [
+        { label: 'Profil', path: '/' },
+        { label: 'Çıkış', path: '/login' },
+    ];
+
     const pages = [
         { label: 'Anasayfa', path: '/' },
         { label: 'Dolabım', path: '/pantry' },
@@ -43,6 +46,12 @@ function ResponsiveAppBar() {
         navigate(path);
         handleCloseNavMenu();
     };
+
+    const goSettings = (path) => {
+        navigate(path);
+        handleCloseUserMenu();
+    };
+
 
     return (
         <AppBar position="static" color="success">
@@ -156,9 +165,9 @@ function ResponsiveAppBar() {
                             open={Boolean(anchorElUser)}
                             onClose={handleCloseUserMenu}
                         >
-                            {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
+                            {settings.map((s) => (
+                                <MenuItem key={s.path} onClick={() => goSettings(s.path)}>
+                                    <Typography sx={{ textAlign: 'center' }}>{s.label}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
