@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from "react";
 import '../css/Home.css'
 import ButtonBaseDemo from "./ButtonBaseDemo.jsx";
-import logo from "../images/logo.png";
 import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
-import {useNavigate} from "react-router-dom";
 import Video from '../images/video.png'
 import Header from "./Header.jsx";
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -15,23 +13,12 @@ function Home() {
 
     useEffect(() => { setName("Elif"); }, []);
 
-    const navigate = useNavigate();
 
 
     return(
 
         <div>
-            <div className='header'>
-                <div className='flex-row'>
-                    <img className='logo' src={logo}/>
-                    <p className='logo-text'> Yeşil Dolap A.Ş.</p>
-                    <Stack className='avatar'>
-                        <Avatar >{name}</Avatar>
-                    </Stack>
-                    <LogoutIcon onClick={() => navigate("/login")}
-                                      style={{marginLeft:'20px'}} />
-                </div>
-            </div>
+            <Header/>
 
             <h1 className='welcomeHome'>YEŞİLDOLAP' A HOŞGELDİN {name}! </h1>
             <div>
