@@ -14,7 +14,7 @@ function Login() {
     return (
         <div className='App'>
             <div className='login-box'>
-                <h1 className='logo-name'>YEŞİLDOLAP</h1>
+                <h1 className='logo-name'>YeşilDolap</h1>
                 <br/>
                 <p className='slogan'>Atık Değil, Lezzet Yarat!</p>
                 <br/><br/>

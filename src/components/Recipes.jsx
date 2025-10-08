@@ -8,8 +8,9 @@ import ComboBox from "./ComboBox.jsx";
 import Checkbox from '@mui/material/Checkbox';
 import { FormControlLabel } from '@mui/material';
 import MediaCard from "./MediaCard.jsx";
-
-
+import Box from '@mui/material/Box';
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
 
 function Recipes() {
 
@@ -29,6 +30,14 @@ function Recipes() {
                 <ArrowBackIosIcon onClick={() => navigate("/")}
                                   style={{marginLeft: '20px'}}/>
                 <h1>Tarifler</h1>
+                <Box sx={{
+                    position: 'fixed',
+                    right: 16
+                }}>
+                    <Fab size="large" color={"inherit"} aria-label="add" >
+                        <AddIcon />
+                    </Fab>
+                </Box>
             </div>
 
             <div>

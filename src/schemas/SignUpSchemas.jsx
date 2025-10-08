@@ -3,12 +3,12 @@ import * as yup from 'yup';
 export const SignUpSchemas = yup.object({
     name: yup
         .string()
-        .min(3, 'Geçerli bir isim giriniz.')
+        .min(2, 'Geçerli bir isim giriniz.')
         .required('Bu alanın doldurulması zorunludur.'),
 
     surname: yup
         .string()
-        .min(3, 'Geçerli bir soyad giriniz.')
+        .min(2, 'Geçerli bir soyad giriniz.')
         .required('Bu alanın doldurulması zorunludur.'),
 
     email: yup

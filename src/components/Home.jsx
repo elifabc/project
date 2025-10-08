@@ -1,11 +1,9 @@
 import React, {useEffect, useState} from "react";
 import '../css/Home.css'
 import ButtonBaseDemo from "./ButtonBaseDemo.jsx";
-import Stack from "@mui/material/Stack";
-import Avatar from "@mui/material/Avatar";
 import Video from '../images/video.png'
 import Header from "./Header.jsx";
-import LogoutIcon from '@mui/icons-material/Logout';
+import Popper from "@mui/material/Popper";
 
 function Home() {
 
@@ -14,12 +12,11 @@ function Home() {
     useEffect(() => { setName("Elif"); }, []);
 
 
-
     return(
 
         <div>
-            <Header/>
 
+            <Header/>
             <h1 className='welcomeHome'>YEŞİLDOLAP' A HOŞGELDİN {name}! </h1>
             <div>
                 <h3 style={{color: '#093217',

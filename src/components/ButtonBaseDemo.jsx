@@ -9,12 +9,15 @@ import { Link as RouterLink } from 'react-router-dom';
 import pantryImg   from '../images/pantry.jpg'
 import recipesImg  from '../images/ recipes.jpg';
 import storageImg  from '../images/ storage.webp';
+import pointImg    from '../images/point.jpeg';
 
 
 const images = [
-    { url: pantryImg,  title: 'Dolabım',          width: '40%' ,    to:"/pantry"},
-    { url: recipesImg, title: 'Tarifler',         width: '30%' ,    to: "/recipes"},
-    { url: storageImg, title: 'Saklama Koşulları', width: '30%',    to: "/storage" },
+    { url: pantryImg,  title: 'Dolabım',            width: '25%' ,    to:"/pantry"},
+    { url: recipesImg, title: 'Tarifler',           width: '25%' ,    to: "/recipes"},
+    { url: pointImg,   title: 'Puan Durumu',          width: '25%',     to: "/score" },
+    { url: storageImg, title: 'Saklama Koşulları',  width: '25%',     to: "/storage" },
+
 ];
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({

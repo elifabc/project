@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Recipes from "../components/Recipes.jsx";
 import Storage from "../components/Storage.jsx"
 import About from "../components/About.jsx";
+import ScoreSheet from "../components/ScoreSheet.jsx";
 
 function RouterConfig() {
     return(
@@ -18,6 +19,7 @@ function RouterConfig() {
             <Route path = '/recipes' element={<Recipes/>} />
             <Route path = '/storage' element={<Storage/>} />
             <Route path = '/about' element={<About/>} />
+            <Route path = '/score' element={<ScoreSheet/>} />
 
         </Routes>
     )

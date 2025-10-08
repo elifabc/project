@@ -7,14 +7,15 @@ body{
 }
 
 .logo-name {
+    font-family: "Tanseek Modern Arabic", "Tanseek Sans Arabic",
+    "Noto Kufi Arabic", "Cairo", "IBM Plex Sans Arabic";
     color: #093217;
     font-size: 60px;
     text-align: center;
     border: 5px solid rgb(1, 9, 26);
     padding: 10px 15px;
     margin: 0 auto;
-    border-radius: 25px;
-}
+    border-radius: 25px; }
 
 .slogan {
     font-family: "Tagesschrift", system-ui;
