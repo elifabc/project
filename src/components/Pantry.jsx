@@ -1,26 +1,18 @@
 import * as React from 'react';
 import Header from "./Header.jsx";
 import DataTable from "./DataTable.jsx";
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import '../css/Pantry.css'
 import MediaCard from "./MediaCard.jsx";
-import {useNavigate} from "react-router-dom";
 import AddProduct from "./AddProduct.jsx";
+import PageHeader from "./PageHeader.jsx";
 
 export default function Pantry() {
-
-    const navigate = useNavigate();
-
 
     return (
         <div>
             <Header/>
             <br/>
-            <div className='myPantry'>
-                <ArrowBackIosIcon onClick={() => navigate("/")}
-                    style={{marginLeft:'20px'}} />
-                <h1>Dolabım</h1>
-            </div>
+            <PageHeader title={'Dolabım'}/>
             <br/>
 
             <div className='flexRow'>

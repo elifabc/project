@@ -8,18 +8,21 @@ import Recipes from "../components/Recipes.jsx";
 import Storage from "../components/Storage.jsx"
 import About from "../components/About.jsx";
 import ScoreSheet from "../components/ScoreSheet.jsx";
+import Profile from "../components/Profile.jsx"
 
 function RouterConfig() {
     return(
         <Routes>
-            <Route path = '/' element={<Home/>} />
-            <Route path = '/login' element={<Login/>} />
+            <Route path = '/Home' element={<Home/>} />
+            <Route path = '/' element={<Login/>} />
             <Route path = '/signUp' element={<SignUp/>} />
             <Route path = '/pantry' element={<Pantry/>} />
             <Route path = '/recipes' element={<Recipes/>} />
             <Route path = '/storage' element={<Storage/>} />
             <Route path = '/about' element={<About/>} />
             <Route path = '/score' element={<ScoreSheet/>} />
+            <Route path = '/profile' element={<Profile/>} />
+
 
         </Routes>
     )

@@ -7,8 +7,8 @@ import { Link as RouterLink } from 'react-router-dom';
 
 
 import pantryImg   from '../images/pantry.jpg'
-import recipesImg  from '../images/ recipes.jpg';
-import storageImg  from '../images/ storage.webp';
+import recipesImg  from '../images/recipes.jpg';
+import storageImg  from '../images/storage.webp';
 import pointImg    from '../images/point.jpeg';
 
 

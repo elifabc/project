@@ -1,17 +1,12 @@
-/* ===============================
-   Earthy Market – Global Theme
-   =============================== */
+
 :root{
-    /* Header ve mevcut değişkenlerinle uyumlu */
     --header-bg: rgba(255,255,255,.72);
     --header-bg-solid: #FFF9ED;
     --form-maxw: 500px;
 
-    /* Temel metin ve yardımcı tonlar */
     --text: #8b8579;
     --muted: #7A746B;
 
-    /* Palet */
     --primary: #2BAF6A;       /* ana eylem (kaydet vb.) */
     --primary-600: #249759;   /* hover/aktif */
     --accent: #D97706;        /* vurgu/link/uyarı */
@@ -23,7 +18,6 @@
     --warn: #D97706;
     --error: #9a1818;
 
-    /* UI yardımcıları */
     --border: #E8E2D6;
     --radius: 12px;
     --shadow: 0 2px 8px rgba(0,0,0,.06);
@@ -72,8 +66,7 @@ body{
 }
 
 .App form{
-    width: min(90vw, var(--form-maxw));  /* Küçük ekranda %96, büyükte max --form-maxw */
-    /* İsteğe bağlı: kartın biraz daha nefes alması için */
+    width: min(90vw, var(--form-maxw));
     padding: clamp(10px, 3vw, 36px);
 }
 

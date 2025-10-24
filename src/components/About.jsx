@@ -1,23 +1,15 @@
 import React from "react";
 import Header from "./Header.jsx";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import {useNavigate} from "react-router-dom";
+import PageHeader from "./PageHeader.jsx";
 
 
 function About(){
-
-    const navigate = useNavigate();
-
 
     return(
         <div>
             <Header/>
             <br/>
-            <div className='myPantry'>
-                <ArrowBackIosIcon onClick={() => navigate("/")}
-                                  style={{marginLeft: '20px'}}/>
-                <h1>Hakkımızda</h1>
-            </div>
+            <PageHeader title={'Hakkımızda'}/>
             <br/>
         </div>
 

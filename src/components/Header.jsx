@@ -26,17 +26,17 @@ function ResponsiveAppBar() {
     const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const settings = [
-        { label: 'Profil', path: '/' },
-        { label: 'Çıkış', path: '/login' },
+        { label: 'Profil', path: '/Profile' },
+        { label: 'Çıkış', path: '/' },
     ];
 
     const pages = [
-        { label: 'Anasayfa', path: '/' },
-        { label: 'Dolabım', path: '/pantry' },
-        { label: 'Tarifler', path: '/recipes' },
-        { label: 'Puan Durumu', path: '/score' },
-        { label: 'Saklama Koşulları', path: '/storage' },
-        { label: 'Hakkımızda', path: '/about' },
+        { label: 'Anasayfa', path: '/Home' },
+        { label: 'Dolabım', path: '/Pantry' },
+        { label: 'Tarifler', path: '/Recipes' },
+        { label: 'Puan Durumu', path: '/Score' },
+        { label: 'Saklama Koşulları', path: '/Storage' },
+        { label: 'Hakkımızda', path: '/About' },
     ];
 
     const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
@@ -83,7 +83,8 @@ function ResponsiveAppBar() {
                         variant="h6"
                         noWrap
                         component={Link}
-                        to="/"
+                        to="/Home
+                        "
                         sx={{
                             ml: 2,
                             display: { xs: 'none', md: 'flex' },

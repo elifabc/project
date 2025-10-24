@@ -17,7 +17,9 @@ function Login() {
                 <h1 className='logo-name'>YeşilDolap</h1>
                 <br/>
                 <p className='slogan'>Atık Değil, Lezzet Yarat!</p>
-                <br/><br/>
+                <p style={{textAlign:'center', marginTop:'3px', backgroundColor:'rgb(255, 255, 255)', color:'#a55a3f', letterSpacing: 1}}
+                >Tazeliği Korumaya ve Gıdaya Dost Bir Yaşama Teşvik Eder.</p>
+                <br/>
                 <div className='login-box'>
                     <Box
                         component="form"
@@ -35,8 +37,8 @@ function Login() {
                         <TextField id="outlined-basic" label="E-posta" variant="outlined" color='success'
                                    fullWidth/>
                         <TextField id="outlined-basic" label="Şifre" variant="outlined" color='success' fullWidth/>
-                        <Button onClick={() => navigate("/")}
-                            variant="contained" disableElevation
+                        <Button onClick={() => navigate("/Home")}
+                                variant="contained" disableElevation
                                 sx={{
                                     width: '100%',
                                     py: 1.2,
@@ -45,7 +47,7 @@ function Login() {
                                 }}>
                             Giriş
                         </Button>
-                        <p style={{textAlign: 'right', color:'#01091a'}}>Şifreni mi unuttun?</p>
+                        <p style={{textAlign: 'right', color: '#01091a'}}>Şifreni mi unuttun?</p>
                         <div className="line-text">
                             <span>Veya</span>
                         </div>

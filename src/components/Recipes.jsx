@@ -1,16 +1,15 @@
 import React from "react";
 import Header from "./Header.jsx";
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import {useNavigate} from "react-router-dom";
 import FixedTags from "./FixedTags.jsx";
 import '../css/Recipes.css'
 import ComboBox from "./ComboBox.jsx";
 import Checkbox from '@mui/material/Checkbox';
 import { FormControlLabel } from '@mui/material';
 import MediaCard from "./MediaCard.jsx";
-import Box from '@mui/material/Box';
+import AddRecipe from "./AddRecipe.jsx";
+import PageHeader from "./PageHeader.jsx";
+import Tooltip from '@mui/material/Tooltip';
 import Fab from '@mui/material/Fab';
-import AddIcon from '@mui/icons-material/Add';
 
 function Recipes() {
 
@@ -20,24 +19,12 @@ function Recipes() {
         setChecked(event.target.checked);
     };
 
-    const navigate = useNavigate();
-
     return(
         <div>
             <Header/>
             <br/>
-            <div className='myPantry'>
-                <ArrowBackIosIcon onClick={() => navigate("/")}
-                                  style={{marginLeft: '20px'}}/>
-                <h1>Tarifler</h1>
-                <Box sx={{
-                    position: 'fixed',
-                    right: 16
-                }}>
-                    <Fab size="large" color={"inherit"} aria-label="add" >
-                        <AddIcon />
-                    </Fab>
-                </Box>
+            <div>
+                <PageHeader title={'Tarifler'}/>
             </div>
 
             <div>
@@ -55,6 +42,22 @@ function Recipes() {
                 </div> <br/>
             </div>
             <MediaCard/>
+            <Tooltip title="Yeni tarif ekle" arrow placement="left">
+                <Fab
+                    size="large"
+                    color="inherit"
+                    aria-label="add"
+                    sx={{
+                        position: 'fixed',
+                        right: 'max(16px, env(safe-area-inset-right))',
+                        bottom: 'max(16px, env(safe-area-inset-bottom))',
+                        zIndex: (theme) => theme.zIndex.tooltip + 1,
+                        boxShadow: 6,
+                    }}
+                >
+                    <AddRecipe />
+                </Fab>
+            </Tooltip>
         </div>
     )
 }

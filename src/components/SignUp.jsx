@@ -148,7 +148,7 @@ function SignUp() {
                 <button type="submit" className="saveButton">Kaydet</button>
                 <br /><br />
                 <div style={{ textAlign: "right" }}>
-                    <Button onClick={() => navigate("/login")} variant="contained" size="small" color="warning">
+                    <Button onClick={() => navigate("/")} variant="contained" size="small" color="warning">
                         Geri Dön
                     </Button>
                 </div>
